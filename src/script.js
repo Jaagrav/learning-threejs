@@ -176,9 +176,9 @@ renderer.setClearColor(parameters.backgroundColor)
  * Controls
  */
 
-const controls = new OrbitControls(camera, canvas);
-controls.enableDamping = true;
-controls.enabled = parameters.enableOrbitControl;
+// const controls = new OrbitControls(camera, canvas);
+// controls.enableDamping = true;
+// controls.enabled = parameters.enableOrbitControl;
 /**
  * Animate
  */
@@ -188,7 +188,7 @@ const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
 
-    controls.update();
+    // controls.update();
     // Render
     renderer.render(scene, camera)
 
@@ -206,7 +206,7 @@ const colorsUpdated = () => {
     pointLight.visible = parameters.showPointLight;
     fog.color = new THREE.Color(parameters.backgroundColor);
     scene.fog = fog;
-    controls.enabled = parameters.enableOrbitControl;
+    // controls.enabled = parameters.enableOrbitControl;
 }
 gui.addColor(parameters, 'directionalLight1Color').onChange(colorsUpdated)
 gui.addColor(parameters, 'directionalLight2Color').onChange(colorsUpdated)
