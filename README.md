@@ -8,3 +8,6 @@
 - **Galaxy Generator**
   - Deploy link: https://galaxy-gen-j7.vercel.app/
   - Code: https://github.com/Jaagrav/learning-threejs/tree/galaxy-generator
+- **Creepy Head**
+  - Deploy link: https://creepy-head-j7.vercel.app
+  - Code: https://github.com/Jaagrav/learning-threejs/tree/creepy-head
